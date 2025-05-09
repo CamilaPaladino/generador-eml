@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador EML | ROOT </title>
+    <meta name="description" content="Convertí tu HTML en un archivo EML con imágenes en base64. Subí tu código y descargalo listo para enviar. ¡Fácil, rápido y sin vueltas!">
+    <meta name="keywords" content="Deml generator, convertir html a eml, base64 imágenes html, codificar imágenes eml, generar archivo eml, eml html base64, html a eml online">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--share Facebook-->
+    <meta property="og:url" content="https://somosroot.com.ar/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Generador EML | ROOT ">
+    <meta property="og:description" content="Subí tu HTML, codificamos las imágenes en base64 y te damos un EML listo para enviar desde Gmail, Outlook o donde quieras. Sin vueltas, en segundos.">
+    <meta property="og:image" content="https://somosroot.com.ar/assets/images/og.png">
+    <!--share Twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://camila-paladino-dev.netlify.app">
+    <meta property="twitter:url" content="https://camila-paladino-dev.netlify.app">
+    <meta name="twitter:title" content="Generador EML | ROOT ">
+    <meta name="twitter:description" content="Subí tu HTML, codificamos las imágenes en base64 y te damos un EML listo para enviar desde Gmail, Outlook o donde quieras. Sin vueltas, en segundos.">
+    <meta name="twitter:image" content="https://somosroot.com.ar/assets/images/og.png">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" href="https://somosroot.com.ar/generador-eml/favicon/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://somosroot.com.ar/generador-eml/favicon/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://somosroot.com.ar/generador-eml/favicon/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://somosroot.com.ar/generador-eml/favicon/152.png">
+    <link rel="icon" type="image/png" href="https://somosroot.com.ar/generador-eml/favicon/favicon.png">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="home">
+        <div class="container">
+            <h1 data-aos="fade-up" data-aos-duration="1000">Convertí tu HTML en un EML listo para mandar</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Subí tu HTML y descargá un EML con imágenes en base64, todo en un par de clics.</p>
+            <a href="#generar" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">¡Quiero probarlo!</a>
+        </div>
+    </section>
+    
+    <section class="pasos">
+        <div class="container">
+            <h2 data-aos="fade-down" data-aos-duration="1000">Tu EML listo en 3 pasos</h2>
+            <p data-aos="fade-down" data-aos-duration="1000">Sin registros, sin complicaciones, sin límites.</p>
+            <div class="pasos-container">
+                <div class="paso" data-aos="fade-up" data-aos-duration="1000" >
+                    <div class="num">
+                        <p>1</p>
+                    </div>
+                    <h4>Completá el asunto y el nombre del remitente</h4>
+                    <p>Datos básicos para que tu email se vea profesional cuando lo reciban.</p>
+                </div>
+                <div class="paso" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="num">
+                        <p>2</p>
+                    </div>
+                    <h4>Pegá tu HTML y subí las imágenes utilizadas</h4>
+                    <p>No te preocupes, las codificamos por vos.</p>
+                </div>
+                <div class="paso" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="num">
+                        <p>3</p>
+                    </div>
+                    <h4>Descargá tu EML</h4>
+                    <p>Lo abrís, lo mandás, lo que necesites.</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <section id="generar">
+        <div class="container">
+            <div class="contenedor">
+                <div class="left">
+                    <div>
+                        <label for="from-input">De (From):</label>
+                        <input type="text" id="from-input" placeholder="example@example.com">
+                    </div>
+                    <div>
+                        <label for="subject-input">Asunto (Subject):</label>
+                        <input type="text" id="subject-input" placeholder="Asunto del correo">
+                    </div>
+                    
+                    <div class="head-input-html">
+                        <label for="html-input">Pegar HTML:</label>
+                        <div class="file-upload">
+                            <span class="file-upload-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"/></svg> Adjuntar HTML</span>
+                            <input type="file" id="html-file-input" accept="text/html">
+                        </div>
+                    </div>
+                    
+                    <textarea id="html-input"></textarea>
+                    <label for="image-input">Seleccionar imágenes:</label>
+                    <input type="file" id="image-input" multiple accept="image/png, image/jpeg">
+                    <ul id="image-list"></ul>
+                    <button onclick="generateEML()">Generar y descargar EML</button>
+                </div>
+                <div class="right">
+                    <div id="html-preview"></div>
+                </div>
+            </div>
+            <h4>Tu archivo listo para usar en Gmail, Outlook o donde quieras. Fácil y sin vueltas.</h4>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Generador EML By <a target="_blank" href="https://www.linkedin.com/in/camila-paladino-/">Camila Paladino</a> - Convierte HTML a EML con imágenes en base64 </p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
