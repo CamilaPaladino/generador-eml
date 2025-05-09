@@ -106,6 +106,8 @@ document.addEventListener("DOMContentLoaded", function() {
         a.click();
         document.body.removeChild(a);
     }
+
+    document.getElementById('generate-btn').addEventListener('click', generateEML);
     
     AOS.init();  
 });
